@@ -6,9 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
+<link rel="stylesheet" href="formulario.css">
+
 <body>
     
     <h1>Formulário</h1>
+
+<div class="hj">
 
 <form action="/action_page.php">
  <fieldset>
@@ -23,18 +28,57 @@
   <input type="text" id="telefone" name="telefone"><br><br>
   <input type="submit" value="Submit">
  </fieldset>
-</form>
+</form></div>
 
+<div>
 <form action="/action_page.php">
 <fieldset>
     <legend>Dados Acadêmicos</legend>
     <form>
-    <input type="radio" id="html" name="fav_language" value="ADS">
-    <label for="ADS">ADS</label><br>
-    <input type="radio" id="css" name="fav_language" value="CSS">
-    <label for="css">GTI</label><br>
-    <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-    <label for="javascript">JavaScript</label>
-        </form>
+        <label for="fname">Curso</label>
+    <select name="Curso">
+        <option value="1"> ADS</option>
+        <option value="1"> GTI</option>
+        <option value="1"> BDD</option>
+        <option value="1"> TSI</option>
+</select>
+<br>
+
+<label for="fname">Semestre:</label>
+
+<input type="radio" id="html" name="fav_language" value="1">
+<label for="html">1º</label>
+<input type="radio" id="css" name="fav_language" value="2">
+<label for="css">2º</label>
+<input type="radio" id="javascript" name="fav_language" value="3">
+<label for="javascript">3º</label>
+<input type="radio" id="html" name="fav_language" value="4">
+<label for="html">4º</label>
+<input type="radio" id="html" name="fav_language" value="5">
+<label for="html">5º</label>
+</form></div>
+
+<div>
+
+<form action="/action_page.php">
+ <fieldset>
+ 
+<label for="birthday">Trabalha ?</label>
+ <input type="checkbox">
+<br>
+  <label for="email">Local de trabalho:</label>
+  <input type="email" id="email" name="email"><br><br>
+  <label for="telefone">Descreva sua experiência</label>
+  <br>
+  <textarea>
+  
+    </textarea>
+    
+</form>
+
+</div>
+<input type="button" value="gravar">
+<input type="button" value="limpar">
+
 </body>
 </html>
